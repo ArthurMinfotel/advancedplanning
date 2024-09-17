@@ -33,7 +33,7 @@
  * ---------------------------------------------------------------------
  */
 
-namespace Features;
+namespace Glpi\Features;
 
 use CommonITILTask;
 use DateInterval;
@@ -42,9 +42,6 @@ use DateTimeZone;
 use Dropdown;
 use Entity;
 use ExtraVisibilityCriteria;
-use Glpi\Features\complete;
-use Glpi\Features\ID;
-use Glpi\Features\position;
 use Glpi\RichText\RichText;
 use Glpi\Toolbox\Sanitizer;
 use Group_User;
@@ -59,15 +56,6 @@ use RRule\RSet;
 use Session;
 use Toolbox;
 use User;
-
-use function Glpi\Features\__;
-use function Glpi\Features\_n;
-use function Glpi\Features\exportArrayToDB;
-use function Glpi\Features\getForeignKeyFieldForItemType;
-use function Glpi\Features\getItemForItemtype;
-
-use const Glpi\Features\ERROR;
-use const Glpi\Features\READ;
 
 trait PlanningEvent
 {
